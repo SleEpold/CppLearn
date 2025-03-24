@@ -30,7 +30,7 @@ int main()
 
 
 
-    cout << "Fuck,Q" << endl;
+    cout << "Fuck,Q son for brich Fuck Q this wrold" << endl;
 
     return 0;
 }
