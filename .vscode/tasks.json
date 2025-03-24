@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "C:\\mingw64\\bin\\g++.exe",//本地编译器路径
+            "args": [//包含传给gcc命令的参数,用于实现特定功能
+                "-fdiagnostics-color=always",
+                "-g", //生成和调试有关的信息
+                "${file}", //指定编译文件为当前文件
+                "-o",//指定输出文件的路径和名称
+                "${workspaceFolder}\\Exe\\$AA.exe"
+                // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {//包含很多task,归为group
+                "kind": "build",//表名该组任务类型是构建
+                "isDefault": true//表明此任务为此组任务中的默认任务
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
